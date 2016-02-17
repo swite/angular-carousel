@@ -461,7 +461,7 @@ angular.module('angular-carousel').run(['$templateCache', function($templateCach
                                 '  <span class="rn-carousel-control rn-carousel-control-prev" ng-click="prevSlide()" ng-if="carouselIndex > 0 || ' + canloop + '"></span>\n' +
                                 '  <span class="rn-carousel-control rn-carousel-control-next" ng-click="nextSlide()" ng-if="carouselIndex < ' + nextSlideIndexCompareValue + ' || ' + canloop + '"></span>\n' +
                                 '</div>';
-                            iElement.parent().append($compile(angular.element(tpl))(scope));
+                            iElement.append($compile(angular.element(tpl))(scope));
                         }
 
                         if (iAttributes.rnCarouselAutoSlide!==undefined) {
